@@ -5,10 +5,10 @@ import{  faLinkedin  } from '@fortawesome/free-brands-svg-icons';
 const Home = () => {
   return (
     <>
-      <div className="container d-flex flex-column align-items-center justify-content-center">
+      <div className="container d-flex flex-column align-items-center justify-content-center pt-5">
         <div className="row">
           <div className="col">
-            <div className="card p-4 bg-light mt-5 animate__animated animate__slideInUp shadow-lg" id="profile-box">
+            <div className="card p-4 mt-5 animate__animated animate__fadeIn shadow-lg" id="profile-box">
               <div id="profile-container" className="rounded-circle">
                 <img src={profile} alt="" className="rounded-circle" id="profile-pic" width="300px" />
               </div>

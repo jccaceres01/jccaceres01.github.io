@@ -6,7 +6,7 @@ import{  faGlobe  } from '@fortawesome/free-solid-svg-icons';
 const Navigation = (props) => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark mb-5">
+      <nav className="navbar navbar-expand-lg navbar-dark mb-5 sticky-top" id="navbar">
         <div className="container">
           <Link className="navbar-brand" to="/">Julio C.</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,16 +21,16 @@ const Navigation = (props) => {
                 <Link className="nav-link" aria-current="page" to="/about">About</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="/about">Skills</Link>
+                <Link className="nav-link" aria-current="page" to="/skills">Skills</Link>
+              </li>
+              {/* <li className="nav-item">
+                <Link className="nav-link" aria-current="page" to="/services">Services</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="/about">Services</Link>
-              </li>
+                <Link className="nav-link" aria-current="page" to="/works">Works</Link>
+              </li> */}
               <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="/about">Work</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="/about">Contact</Link>
+                <Link className="nav-link" aria-current="page" to="/contact">Contact</Link>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#none" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
