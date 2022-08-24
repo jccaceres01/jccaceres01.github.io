@@ -7,6 +7,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import 'animate.css';
+import './i18nextConf.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

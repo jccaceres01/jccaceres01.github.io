@@ -1,11 +1,3 @@
-import rulete from '../styles/rulete.css';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import{ faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import{ faCube } from '@fortawesome/free-solid-svg-icons';
-import{ faUser } from '@fortawesome/free-solid-svg-icons';
-import{ faHome } from '@fortawesome/free-solid-svg-icons';
-
 import html from '../media/img/icons/html.png';
 import css from '../media/img/icons/css.png';
 import php from '../media/img/icons/php.png';
@@ -22,13 +14,17 @@ import cplusplus  from '../media/img/icons/cplusplus.png';
 import mysql  from '../media/img/icons/mysql.png';
 import mongo  from '../media/img/icons/mongo.png';
 import github  from '../media/img/icons/github.png';
+import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
+
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="container translucid-box animate__animated animate__fadeIn">
         <div className="row">
-          <h1 className="text-center">My Skills</h1>
+          <h1 className="text-center">{ t('skills') }</h1>
           <hr />
           <div className="container d-flex">
             <div className="row">
@@ -47,7 +43,7 @@ const Skills = () => {
               <div className="col">
                 <div className="skill-icon d-flex flex-column justify-content-center align-items-center">
                   <img className="img-responsive" src={php} alt="react" />
-                  <strong>React</strong>
+                  <strong>PhP</strong>
                 </div>
               </div>
               <div className="col">
