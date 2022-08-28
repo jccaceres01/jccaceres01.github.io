@@ -74,7 +74,7 @@ code {
 .translucid-box {
   background-color: #000000e8;
   padding: 2em;
-  border-radius: 12px; 
+  border-radius: 12px;
 }
 
 .title {
@@ -82,12 +82,14 @@ code {
 }
 
 .icon-pill {
-  width: 8em;
+  width: 100%;
+  text-align: center;
+  height: 100%;
   transition:all .1s ease-in;
 }
 
 .icon-pill:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition:all .1s ease-in;
 }
 

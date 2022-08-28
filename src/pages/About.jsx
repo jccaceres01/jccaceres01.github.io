@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGamepad } from '@fortawesome/free-solid-svg-icons';
-import { faPizzaSlice } from '@fortawesome/free-solid-svg-icons';
-import { faMusic } from '@fortawesome/free-solid-svg-icons';
+import { faNetworkWired } from '@fortawesome/free-solid-svg-icons';
+import { faWindows } from '@fortawesome/free-brands-svg-icons';
+import { faComputer } from '@fortawesome/free-solid-svg-icons';
 import { faLinux } from '@fortawesome/free-brands-svg-icons';
-import { faFilm } from '@fortawesome/free-solid-svg-icons';
+import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 
@@ -30,8 +30,8 @@ const About = () => {
         </p>
       </div>
       <div className="container translucid-box animate__animated animate__fadeIn">
-        <div className="row my-5">
-          <div className="col-sm-6 px-5">
+        <div className="row my-5 mb-4">
+          <div className="col-sm-6 px-5 mb-5">
             <h3 className="mb-4">{ t('about_details') }</h3>
             <table>
               <tbody>
@@ -62,28 +62,28 @@ const About = () => {
               </tbody>
             </table>
           </div>
-          <div className="col-sm-6">
+          <div className="col-sm-6 px-5">
             <h3 className="mb-4">{ t('about_interest') }</h3>
-            <div className="d-flex justify-content-start align-items-start">
-              <div className="card bg-dark shadow p-2  border border-light border-1 d-flex flex-column justify-content-center align-items-center icon-pill">
-                <FontAwesomeIcon icon={faGamepad} size="2x" />
-                <strong>{ t('about_interest_games') }</strong>
+            <div className="d-flex flex-wrap gap-2">
+              <div className="card bg-dark shadow p-2  mx-2 border border-light border-1 d-flex flex-column justify-content-center align-items-center icon-pill">
+                <FontAwesomeIcon icon={faNetworkWired} size="2x" />
+                <strong>{ t('about_interest_netowrk') }</strong>
               </div>
               <div className="card bg-dark shadow p-2 mx-2 border border-light border-1 d-flex flex-column justify-content-center align-items-center icon-pill">
-                <FontAwesomeIcon icon={faPizzaSlice} size="2x" />
-                <strong>{ t('about_interest_food') }</strong>
+                <FontAwesomeIcon icon={faWindows} size="2x" />
+                <strong>{ t('about_interest_windows') }</strong>
               </div>
               <div className="card bg-dark shadow p-2 mx-2 border border-light border-1 d-flex flex-column justify-content-center align-items-center icon-pill">
-                <FontAwesomeIcon icon={faMusic} size="2x" />
-                <strong>{ t('about_interest_music') }</strong>
+                <FontAwesomeIcon icon={faComputer} size="2x" />
+                <strong>{ t('about_interest_hardware') }</strong>
               </div>
               <div className="card bg-dark shadow p-2 mx-2 border border-light border-1 d-flex flex-column justify-content-center align-items-center icon-pill">
                 <FontAwesomeIcon icon={faLinux} size="2x" />
                 <strong>Linux</strong>
               </div>
               <div className="card bg-dark shadow p-2 mx-2 border border-light border-1 d-flex flex-column justify-content-center align-items-center icon-pill">
-                <FontAwesomeIcon icon={faFilm} size="2x" />
-                <strong>{ t('about_interest_movies') }</strong>
+                <FontAwesomeIcon icon={faDatabase} size="2x" />
+                <strong>{ t('about_interest_database') }</strong>
               </div>
             </div>
           </div>
