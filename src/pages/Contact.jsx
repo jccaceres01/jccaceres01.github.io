@@ -1,16 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import{  faEnvelopeOpenText  } from '@fortawesome/free-solid-svg-icons';
-import{  faPaperPlane  } from '@fortawesome/free-solid-svg-icons';
-import{  faArrowRotateRight  } from '@fortawesome/free-solid-svg-icons';
+import {  faPaperPlane  } from '@fortawesome/free-solid-svg-icons';
 
-import React, { useRef } from 'react';
+import React from 'react';
 import emailjs from '@emailjs/browser';
 
 import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
-
-  const form = useRef();
 
   const { t } = useTranslation();
 
@@ -18,14 +14,11 @@ const Contact = () => {
     e.preventDefault();
 
     
-    emailjs.sendForm('service_8g0i7ps', 'template_bc4wv45', form.current, 'gKDv3z1R1eRZXLg2F')
+    emailjs.sendForm('service_an8nyg7', 'template_bc4wv45', e.target, 'gKDv3z1R1eRZXLg2F')
       .then((result) => {
           alert("Message Send. Thanks.");
 
-          form.current.first_name.value = '';
-          form.current.last_name.value = '';
-          form.current.email.value = '';
-          form.current.message.value = '';
+          e.target.reset();
 
       }, (error) => {
           console.log(error.text);
@@ -33,39 +26,29 @@ const Contact = () => {
   }
 
   return (
-    <>
-      <div className="container translucid-box animate__animated animate__fadeIn">
-        <h1 className="text-center mt-2 mb-4">{ t('contact') }</h1>
+      <section id="contact" className="flex min-h-screen max-w-screen-xl p-4 pt-40 mx-auto">
+        <div className="flex flex-col w-full items-center gap-5">
+          <h1 className="text-6xl font-bold my-4 mb-10">{ t('contact_title') }<span className="text-blue-400">{ t('contact_noum')}</span></h1>
+          <form  className="flex flex-col w-5/6 items-center justify-center" id="contact-form" onSubmit={(e) => sendEmail(e) }>
+            
+            <div className="flex w-full justify-between my-4 px-12 gap-4">
+              <input type="text" className="form-control w-full" name="name" placeholder={ t('contact_full_name') } required />
+              <input type="email" className="form-control w-full" name="email" placeholder={ t('contact_email') } required />
+            </div>
+            
+            <div className="flex w-full justify-between my-4 px-12 gap-4">
+              <input type="text" className="form-control w-full" name="phone" placeholder={ t('contact_mobile_number') } />
+              <input type="text" className="form-control w-full" name="subject" placeholder={ t('contact_email_subject') } />
+            </div>
 
-        <div className="row p-2 m-2">
-          <div className="col-sm-6 mb-5 d-flex align-items-center justify-content-center">
-            <FontAwesomeIcon icon={faEnvelopeOpenText} size="10x" beat />
-          </div>
-          <div className="col">
-            <form id="contact-form" ref={form} onSubmit={sendEmail}>
-              <div className="mb-3">
-                <input type="text" className="form-control" name="first_name" placeholder={ t('contact_first_name') } required />
-              </div>
+            <div className="flex w-full justify-between my-4 px-12 gap-4">
+              <textarea name="message" className="form-control w-full" rows={12} required placeholder={ t('contact_message') }></textarea>
+            </div>
 
-              <div className="mb-3">
-                <input type="text" className="form-control" name="last_name" placeholder={ t('contact_last_name') } required />
-              </div>
-
-              <div className="mb-3">
-                <input type="email" className="form-control" name="email" placeholder={ t('contact_email') } required />
-              </div>
-
-              <div className="mb-3">
-                <textarea name="message" id="" cols="30" rows="10" className="form-control" required placeholder={ t('contact_message') }></textarea>
-              </div>
-
-              <button type="reset" className="btn btn-outline-secondary m-2">{ t('contact_clear_btn') }<FontAwesomeIcon icon={faArrowRotateRight} /></button>
-              <button type="submit" className="btn btn-outline-secondary">{ t('contact_send_btn') } <FontAwesomeIcon icon={faPaperPlane} /></button>
-            </form>
-          </div>
+            <button type="submit" className="fill-btn">{ t('contact_send_btn') } <FontAwesomeIcon icon={faPaperPlane} /></button>
+          </form>
         </div>
-      </div>
-    </>
+      </section>
   )
 }
 
