@@ -15,11 +15,11 @@ const About = () => {
 
   return (
     <section id="about" className="flex min-h-screen max-w-screen-xl p-4 pt-40 mx-auto">
-      <div className="flex flex-col items-center gap-5">
-        <h1 className="text-6xl font-bold my-4 mb-10">{ t('about_title') } <span className="text-blue-400">{ t('noum')}</span></h1>
-        <img className="rounded-full border-blue-400 border-4 w-1/5 animate-pulse" src={profile} alt="profile" />
-        <h4 className="text-3xl text-blue-400 font-bold">{ t('home_job_title') }</h4>
-        <p className="text-center text-xl">{ t('about_paragraph_1') }</p>
+      <div className="flex flex-col items-center mx-2 md:mx-6">
+        <h2 className="text-6xl font-bold mb-4 lg:mb-6">{ t('about_title') } <span className="text-blue-400">{ t('noum')}</span></h2>
+        <img className="rounded-full mb-4 border-blue-400 border-4 w-2/6 animate-pulse lg:w-1/6" src={profile} alt="profile" />
+        <h4 className="text-2xl text-blue-400 font-bold">{ t('home_job_title') }</h4>
+        <p className="text-center text-md mb-4 md:text-2xl">{ t('about_paragraph_1') }</p>
         <a href={ (i18n.language === 'en') ? cbEn : cbEs } className="fill-btn" target="_blank" rel="noreferrer">
           <span className="mx-2">{ t('about_cv') }</span>
           <FontAwesomeIcon icon={faDownload} />

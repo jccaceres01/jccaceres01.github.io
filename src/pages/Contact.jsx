@@ -27,22 +27,22 @@ const Contact = () => {
 
   return (
       <section id="contact" className="flex min-h-screen max-w-screen-xl p-4 pt-40 mx-auto">
-        <div className="flex flex-col w-full items-center gap-5">
+        <div className="flex flex-col w-full items-center gap-4 lg:gap-6">
           <h1 className="text-6xl font-bold my-4 mb-10">{ t('contact_title') }<span className="text-blue-400">{ t('contact_noum')}</span></h1>
-          <form  className="flex flex-col w-5/6 items-center justify-center" id="contact-form" onSubmit={(e) => sendEmail(e) }>
+          <form  className="flex flex-col min-w-full px-2 items-center justify-center" id="contact-form" onSubmit={(e) => sendEmail(e) }>
             
-            <div className="flex w-full justify-between my-4 px-12 gap-4">
+            <div className="flex flex-col w-full justify-between my-4 gap-4 md:flex-row lg:gap-6">
               <input type="text" className="form-control w-full" name="name" placeholder={ t('contact_full_name') } required />
               <input type="email" className="form-control w-full" name="email" placeholder={ t('contact_email') } required />
             </div>
             
-            <div className="flex w-full justify-between my-4 px-12 gap-4">
+            <div className="flex flex-col w-full justify-between my-4 gap-4 md:flex-row lg:gap-6">
               <input type="text" className="form-control w-full" name="phone" placeholder={ t('contact_mobile_number') } />
               <input type="text" className="form-control w-full" name="subject" placeholder={ t('contact_email_subject') } />
             </div>
 
-            <div className="flex w-full justify-between my-4 px-12 gap-4">
-              <textarea name="message" className="form-control w-full" rows={12} required placeholder={ t('contact_message') }></textarea>
+            <div className="flex w-full justify-between my-4 gap-4">
+              <textarea name="message" className="form-control w-full min-h-[110px] lg:min-h-[150px]" required placeholder={ t('contact_message') }></textarea>
             </div>
 
             <button type="submit" className="fill-btn">{ t('contact_send_btn') } <FontAwesomeIcon icon={faPaperPlane} /></button>
