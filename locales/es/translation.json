@@ -7,6 +7,7 @@
   "nav_home" : "Inicio",
   "nav_about" : "Sobre mí",
   "nav_skills" : "Habilidades",
+  "nav_portfolio" : "Portafolio",
   "nav_contact" : "Contacto",
   "home_job_title" : "Desarrollador Web Front-End",
   "home_profile_resume": "¡Hola! Soy un desarrollador front-end apasionado con experiencia en la creación de interfaces de usuario atractivas e interactivas utilizando la biblioteca React JavaScript. Mi objetivo es combinar mi pasión por la programación con mi amor por el diseño para crear experiencias digitales excepcionales.",
@@ -39,5 +40,17 @@
   "contact_send_btn": "Enviar",
   "footer_rights": "Todos los derechos reservados",
   "footer_writeme": "Escribeme a",
-  "footer_gotop": "Ir arriba"
+  "footer_gotop": "Ir arriba",
+  "portfolio_title": "Portafolio",
+  "portfolio_view_code": "Ver código",
+  "portfolio_sunny_description": "Aplicación hecha en react, consume la API de OpenWeatherMap.com. Entre sus funciones basicas se encuentrar, mostrar informacion del clima de su hibicacion actual, mostrar informacion a travez de mapas con una ligera implementacion de open layer, mostrar la informacion del clima de una ubicacion seleccionada. Se puede intercambiar los sistemas de medidas entre grados centigrados y farenheits.",
+  "portfolio_envelope_description": "Una aplicación web diseñada para ayudar a los usuarios a administrar sus finanzas personales. Esta aplicación de sobre de presupuesto brinda una solución conveniente y eficiente para que las personas y las familias obtengan control sobre sus gastos, realicen un seguimiento de los gastos y alcancen sus objetivos financieros.",
+  "portfolio_envelope_backend_description": "Back-End hecho en Node Js con los Endpoints necesarios para el manejo de los sobres de presupuestos de finanzas personales.",
+  "portfolio_envelope_photo_caption_front_description": "Una simple aplicación donde los usuarios pueden subtitular fotos de otros usuarios. Los usuarios pueden iniciar sesión para subir fotos nuevas, crear subtítulos de las fotos de otros y votar por los mejores subtítulos.",
+  "portfolio_envelope_photo_caption_back_description": "Back-End API para la aplicación photo caption contest. Esta API proporciona, los end-points necesarios para: Subir fotos, subtitular las fotos de otros usuarios y calificar los subtítulos. Además de todo lo anterior, la API proporciona un sistema de inicio de sesión, para identificar aquienes pertenecen los recursos.",
+  "portfolio_reddit_description": "Un simple lector de Reddit de solo lectura. Esta aplicación utiliza la API JSON de Reddit. Viene con un menú lateral para elegir tópicos y cuenta con un filtro para buscar entre los posteos del tópico seleccionado.",
+  "portfolio_stocksearch_description": "Stock Search App es una interface web para consultar las existencias en el WMS de Sococo S.A.S. La finalidad exacta de la aplicación es proporcionar una consulta rápida de la existencia de repuestos para los mecánicos y personal supervisor de taller. Gracias a esta app se agiliza la rotación y movimientos en el área de  almacén, ahorrándole a los operadores de almacén la búsqueda y comprobación de existencias.",
+  "portfolio_barcodeapp_description": "SCC WMS  BarcodeApp, es una utilidad móvil para el WMS, de Sococo S.A.S. Entre sus funciones se encuentran: Consultar artículos del almacén por medio de entrada manual o lectura de códigos de barra, generar entradas y salidas de almacén, asignar códigos de barras a los artículos de almacén, generar y cerrar boletas para el conteo físico en inventario, entre otros.",
+  "portfolio_barcodeapi_description": "SCC WMS Barcode API. Esta API da soporte a la aplicación móvil lectora de códigos de barra, en el WMS de  Sococo S.A.S.",
+  "portfolio_lic_description": "Licencias Sococo, es una aplicación para verificar si los operadores y personal de mantenimiento, cumplen con la debida certificación o actitudes para realizar u operar maquinarias dentro de las operaciones de Sococo S.A.S."
 }
