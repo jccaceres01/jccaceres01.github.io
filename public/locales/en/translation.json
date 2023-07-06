@@ -7,6 +7,7 @@
   "nav_home" : "Home",
   "nav_about" : "About",
   "nav_skills" : "Skills",
+  "nav_portfolio" : "Portfolio",
   "nav_contact" : "Contact",
   "home_job_title" : "Front-End Web Developer",
   "home_profile_resume": "Hello! I'm a passionate front-end developer with experience creating engaging and interactive user interfaces using the React JavaScript library. My goal is to combine my passion for programming with my love for design to create exceptional digital experiences.",
@@ -39,5 +40,17 @@
   "contact_send_btn": "Submit",
   "footer_rights": "All Rights Reserved",
   "footer_writeme": "Write me to",
-  "footer_gotop": "Go top"
+  "footer_gotop": "Go top",
+  "portfolio_title": "Portfolio",
+  "portfolio_view_code": "View code",
+  "portfolio_sunny_description": "Application made in React, consumes the OpenWeatherMap.com API. Among its basic functions are: displaying weather information for your current location, displaying information through maps with a light open layer implementation, displaying weather information for a selected location. Measurement systems can be interchanged between degrees Celsius and Fahrenheit.",
+  "portfolio_envelope_description": "An web application designed to help the way users manage their personal finances. This  budget envelope app provides a convenient and efficient solution for individuals and families to gain control over their spending, track expenses, and achieve their financial goals.",
+  "portfolio_envelope_backend_description": "Back-End made in Node Js with the necessary Endpoints to manage personal finance budget envelopes.",
+  "portfolio_envelope_photo_caption_front_description": "A simple app where users can caption photos of other users. Users can log in to upload new photos, create captions for others' photos, and vote for the best captions.",
+  "portfolio_envelope_photo_caption_back_description": "Back-End API for the photo caption contest application. This API provides the necessary end-points to: Upload photos, caption other users' photos, and rate captions. In addition to all of the above, the API provides a login system, to identify who owns the resources.",
+  "portfolio_reddit_description": "A simple read-only Reddit reader. This app uses the Reddit JSON API. It comes with a side menu to choose topics and has a filter to search among the posts of the selected topic.",
+  "portfolio_stocksearch_description": "Stock Search App is a web interface to check the stocks in the WMS of Sococo S.A.S. The exact purpose of the application is to provide a quick consultation of the existence of spare parts for the mechanics and personal workshop supervisor. Thanks to this app, rotation and movements in the warehouse area are streamlined, saving warehouse operators the search and checking of stocks.",
+  "portfolio_barcodeapp_description": "SCC WMS BarcodeApp, is a mobile utility for the WMS, from Sococo S.A.S. Among its functions are: Consult warehouse items through manual entry or barcode reading, generate warehouse entries and exits, assign barcodes to warehouse items, generate and close receipts for physical counting in inventory, among others.",
+  "portfolio_barcodeapi_description": "SCC WMS Barcode API. This API supports the barcode reader mobile application, in the WMS of Sococo S.A.S.",
+  "portfolio_lic_description": "Sococo Licenses, is an application to verify if the operators and maintenance personnel comply with the proper certification or attitudes to make or operate machinery within the operations of Sococo S.A.S."
 }

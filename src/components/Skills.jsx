@@ -23,6 +23,8 @@ import redux  from '../media/img/icons/redux.png';
 import reactRouter  from '../media/img/icons/react-router.png';
 import webpack  from '../media/img/icons/webpack.png';
 import vite  from '../media/img/icons/vite.png';
+import nativeScript  from '../media/img/icons/nativescript.png';
+import sequelize  from '../media/img/icons/sequelize.png';
 
 import { useTranslation } from 'react-i18next';
 
@@ -55,7 +57,9 @@ const Skills = () => {
     { hasProject: false, path_param: 'expressjs', title: 'ExpressJs', icon: expressjs },
     { hasProject: false, path_param: 'laravel', title: 'Laravel', icon: laravel },
     { hasProject: false, path_param: 'webpack', title: 'WebPack', icon: webpack },
-    { hasProject: false, path_param: 'vite', title: 'Vite', icon: vite }
+    { hasProject: false, path_param: 'vite', title: 'Vite', icon: vite },
+    { hasProject: false, path_param: 'nativescript', title: 'NativeScript', icon: nativeScript },
+    { hasProject: false, path_param: 'sequelize', title: 'Sequelize', icon: sequelize }
   ];
 
   return (
