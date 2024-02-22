@@ -2,35 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+/* html {
   font-size: 14px;
   scroll-behavior: smooth;
-}
+} */
 
-body {
-  background-image: linear-gradient(to top, #172554, #111f43, #0d1932, #0b1222, #030712);
-  color: #F0F0F2
+@layer base {
+
+  html {
+    @apply text-sm scroll-smooth;
+  }
+
+  body {
+    @apply text-slate-900 dark:text-white dark:bg-gradient-to-t from-[#172554]  via-[#0d1932] to-[#030712];
+  }
 }
 
 @layer components {
 
-  .small-fill-btn {
-    @apply mt-2 p-2 border-blue-500 border rounded-xl bg-blue-500 text-white text-sm font-bold hover:bg-blue-400 hover:border-blue-400;
+  .nav-link {
+    @apply block py-2 pl-3 pr-4 drop-shadow-md rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0 dark:text-white md:dark:hover:text-blue-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition-colors duration-200;
   }
 
-  .fill-btn {
-    @apply mt-4 p-4 border-blue-500 border rounded-xl bg-blue-500 text-white text-xl font-bold hover:bg-blue-400;
+  .small-fill-btn {
+    @apply mt-2 p-2 border-blue-500 border rounded-xl hover:bg-gradient-to-r from-sky-400 to-blue-600 text-black hover:text-white text-sm font-bold hover:bg-blue-400 hover:border-blue-400;
+  }
+
+  .outline-btn {
+    @apply mt-4 p-4 border-blue-500 border-2 rounded-xl text-xl font-bold hover:text-white hover:bg-gradient-to-r from-sky-400 to-blue-600;
   }
 
   .small-outline-btn {
     @apply mt-2 p-2 border-blue-500 border rounded-xl text-blue-400 text-sm font-bold hover:bg-blue-400 hover:border-blue-400 hover:text-white;
   }
 
-  .outline-btn {
-    @apply mt-4 p-4 border-blue-500 border rounded-xl text-white text-xl font-bold hover:bg-blue-400;
+  .fill-btn {
+    @apply mt-4 p-4 bg-blue-500 border-blue-500 border rounded-xl text-white text-xl font-bold hover:bg-gradient-to-r from-sky-400 to-blue-600;
   }
 
   .form-control {
-    @apply bg-transparent border-blue-400 text-white text-xl rounded-lg placeholder:text-gray-200 placeholder:text-xl lg:text-3xl lg:placeholder:text-3xl
+    @apply bg-transparent border-blue-400 text-white text-xl rounded-lg placeholder:text-gray-400 dark:placeholder:text-gray-500 placeholder:text-xl lg:text-3xl lg:placeholder:text-3xl
   }
 }

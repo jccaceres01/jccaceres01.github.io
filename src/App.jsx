@@ -1,8 +1,8 @@
-import { Outlet } from 'react-router-dom';
-import Header from './components/Navigation';
-import Footer from './components/Footer';
+import { Outlet } from 'react-router-dom'
+import Header from './components/Navigation'
+import Footer from './components/Footer'
 
-function App() {
+function App () {
   return (
     <>
         {/* Header */}
@@ -11,8 +11,7 @@ function App() {
         {/* Footer */}
         <Footer />
     </>
-  );
+  )
 }
 
-export default App;
-
+export default App

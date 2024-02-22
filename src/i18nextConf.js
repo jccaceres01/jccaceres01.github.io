@@ -1,10 +1,10 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import Backend from 'i18next-xhr-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
+import i18n from 'i18next'
+import { initReactI18next } from 'react-i18next'
+import Backend from 'i18next-xhr-backend'
+import LanguageDetector from 'i18next-browser-languagedetector'
 
-const fallbackLng = ['en'];
-const availableLanguages = ['en', 'es'];
+const fallbackLng = ['en']
+const availableLanguages = ['en', 'es']
 
 i18n
   .use(Backend) // load translations using http (default                                               public/assets/locals/en/translations)
@@ -14,7 +14,7 @@ i18n
     fallbackLng, // fallback language is english.
 
     detection: {
-      checkWhitelist: true, // options for language detection
+      checkWhitelist: true // options for language detection
     },
 
     debug: false,
@@ -22,8 +22,8 @@ i18n
     whitelist: availableLanguages,
 
     interpolation: {
-      escapeValue: false, // no need for react. it escapes by default
-    },
-  });
+      escapeValue: false // no need for react. it escapes by default
+    }
+  })
 
-export default i18n;
+export default i18n

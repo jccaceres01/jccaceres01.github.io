@@ -1,5 +1,4 @@
-const StackedIcons = ({techs = []}) => {
-  
+const StackedIcons = ({ techs = [] }) => {
   if (techs.length > 0) {
     return (
       <div className="flex -space-x-4">
@@ -9,8 +8,8 @@ const StackedIcons = ({techs = []}) => {
           ))
         }
       </div>
-    );
+    )
   } else { return null };
 }
 
-export default StackedIcons;
+export default StackedIcons
